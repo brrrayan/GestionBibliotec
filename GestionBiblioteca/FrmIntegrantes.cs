@@ -10,16 +10,21 @@ using System.Windows.Forms;
 
 namespace GestionBiblioteca
 {
-    public partial class FormMain : Form
+    public partial class FrmIntegrantes : Form
     {
-        public FormMain()
+        public FrmIntegrantes()
         {
             InitializeComponent();
         }
 
-        private void integrantesToolStripMenuItem_Click(object sender, EventArgs e)
+        private void label6_Click(object sender, EventArgs e)
         {
-            new FrmIntegrantes().Show();
+
+        }
+
+        private void LblBrayan_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
