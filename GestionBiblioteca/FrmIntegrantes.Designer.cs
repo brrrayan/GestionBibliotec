@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.LblMatriculaBrayan = new System.Windows.Forms.Label();
+            this.LblMatriculaRosalia = new System.Windows.Forms.Label();
+            this.LblMatriculaKelvin = new System.Windows.Forms.Label();
+            this.LblBrayan = new System.Windows.Forms.Label();
+            this.LblRosalia = new System.Windows.Forms.Label();
+            this.LblKelvin = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.LblKelvin = new System.Windows.Forms.Label();
-            this.LblRosalia = new System.Windows.Forms.Label();
-            this.LblBrayan = new System.Windows.Forms.Label();
-            this.LblMatriculaKelvin = new System.Windows.Forms.Label();
-            this.LblMatriculaRosalia = new System.Windows.Forms.Label();
-            this.LblMatriculaBrayan = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,6 +54,68 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(477, 420);
             this.panel2.TabIndex = 1;
+            // 
+            // LblMatriculaBrayan
+            // 
+            this.LblMatriculaBrayan.AutoSize = true;
+            this.LblMatriculaBrayan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblMatriculaBrayan.Location = new System.Drawing.Point(340, 315);
+            this.LblMatriculaBrayan.Name = "LblMatriculaBrayan";
+            this.LblMatriculaBrayan.Size = new System.Drawing.Size(86, 20);
+            this.LblMatriculaBrayan.TabIndex = 5;
+            this.LblMatriculaBrayan.Text = "2018-1437";
+            this.LblMatriculaBrayan.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // LblMatriculaRosalia
+            // 
+            this.LblMatriculaRosalia.AutoSize = true;
+            this.LblMatriculaRosalia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblMatriculaRosalia.Location = new System.Drawing.Point(340, 257);
+            this.LblMatriculaRosalia.Name = "LblMatriculaRosalia";
+            this.LblMatriculaRosalia.Size = new System.Drawing.Size(86, 20);
+            this.LblMatriculaRosalia.TabIndex = 4;
+            this.LblMatriculaRosalia.Text = "2018-2145";
+            // 
+            // LblMatriculaKelvin
+            // 
+            this.LblMatriculaKelvin.AutoSize = true;
+            this.LblMatriculaKelvin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblMatriculaKelvin.Location = new System.Drawing.Point(340, 202);
+            this.LblMatriculaKelvin.Name = "LblMatriculaKelvin";
+            this.LblMatriculaKelvin.Size = new System.Drawing.Size(86, 20);
+            this.LblMatriculaKelvin.TabIndex = 3;
+            this.LblMatriculaKelvin.Text = "2018-1914";
+            // 
+            // LblBrayan
+            // 
+            this.LblBrayan.AutoSize = true;
+            this.LblBrayan.Font = new System.Drawing.Font("Bookman Old Style", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblBrayan.Location = new System.Drawing.Point(35, 304);
+            this.LblBrayan.Name = "LblBrayan";
+            this.LblBrayan.Size = new System.Drawing.Size(244, 24);
+            this.LblBrayan.TabIndex = 2;
+            this.LblBrayan.Text = "Brayan Nicolas Reyes";
+            this.LblBrayan.Click += new System.EventHandler(this.LblBrayan_Click);
+            // 
+            // LblRosalia
+            // 
+            this.LblRosalia.AutoSize = true;
+            this.LblRosalia.Font = new System.Drawing.Font("Bookman Old Style", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblRosalia.Location = new System.Drawing.Point(35, 249);
+            this.LblRosalia.Name = "LblRosalia";
+            this.LblRosalia.Size = new System.Drawing.Size(183, 24);
+            this.LblRosalia.TabIndex = 1;
+            this.LblRosalia.Text = "G. Rosalía Arias";
+            // 
+            // LblKelvin
+            // 
+            this.LblKelvin.AutoSize = true;
+            this.LblKelvin.Font = new System.Drawing.Font("Bookman Old Style", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblKelvin.Location = new System.Drawing.Point(35, 191);
+            this.LblKelvin.Name = "LblKelvin";
+            this.LblKelvin.Size = new System.Drawing.Size(162, 24);
+            this.LblKelvin.TabIndex = 0;
+            this.LblKelvin.Text = "Kelvin Santos";
             // 
             // panel3
             // 
@@ -75,68 +137,6 @@
             this.panel1.Size = new System.Drawing.Size(142, 115);
             this.panel1.TabIndex = 0;
             // 
-            // LblKelvin
-            // 
-            this.LblKelvin.AutoSize = true;
-            this.LblKelvin.Font = new System.Drawing.Font("Bookman Old Style", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblKelvin.Location = new System.Drawing.Point(35, 191);
-            this.LblKelvin.Name = "LblKelvin";
-            this.LblKelvin.Size = new System.Drawing.Size(162, 24);
-            this.LblKelvin.TabIndex = 0;
-            this.LblKelvin.Text = "Kelvin Santos";
-            // 
-            // LblRosalia
-            // 
-            this.LblRosalia.AutoSize = true;
-            this.LblRosalia.Font = new System.Drawing.Font("Bookman Old Style", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblRosalia.Location = new System.Drawing.Point(35, 249);
-            this.LblRosalia.Name = "LblRosalia";
-            this.LblRosalia.Size = new System.Drawing.Size(183, 24);
-            this.LblRosalia.TabIndex = 1;
-            this.LblRosalia.Text = "G. Rosalía Arias";
-            // 
-            // LblBrayan
-            // 
-            this.LblBrayan.AutoSize = true;
-            this.LblBrayan.Font = new System.Drawing.Font("Bookman Old Style", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblBrayan.Location = new System.Drawing.Point(35, 304);
-            this.LblBrayan.Name = "LblBrayan";
-            this.LblBrayan.Size = new System.Drawing.Size(244, 24);
-            this.LblBrayan.TabIndex = 2;
-            this.LblBrayan.Text = "Brayan Nicolas Reyes";
-            this.LblBrayan.Click += new System.EventHandler(this.LblBrayan_Click);
-            // 
-            // LblMatriculaKelvin
-            // 
-            this.LblMatriculaKelvin.AutoSize = true;
-            this.LblMatriculaKelvin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblMatriculaKelvin.Location = new System.Drawing.Point(340, 202);
-            this.LblMatriculaKelvin.Name = "LblMatriculaKelvin";
-            this.LblMatriculaKelvin.Size = new System.Drawing.Size(86, 20);
-            this.LblMatriculaKelvin.TabIndex = 3;
-            this.LblMatriculaKelvin.Text = "2018-1914";
-            // 
-            // LblMatriculaRosalia
-            // 
-            this.LblMatriculaRosalia.AutoSize = true;
-            this.LblMatriculaRosalia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblMatriculaRosalia.Location = new System.Drawing.Point(340, 257);
-            this.LblMatriculaRosalia.Name = "LblMatriculaRosalia";
-            this.LblMatriculaRosalia.Size = new System.Drawing.Size(86, 20);
-            this.LblMatriculaRosalia.TabIndex = 4;
-            this.LblMatriculaRosalia.Text = "2018-2145";
-            // 
-            // LblMatriculaBrayan
-            // 
-            this.LblMatriculaBrayan.AutoSize = true;
-            this.LblMatriculaBrayan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblMatriculaBrayan.Location = new System.Drawing.Point(340, 315);
-            this.LblMatriculaBrayan.Name = "LblMatriculaBrayan";
-            this.LblMatriculaBrayan.Size = new System.Drawing.Size(86, 20);
-            this.LblMatriculaBrayan.TabIndex = 5;
-            this.LblMatriculaBrayan.Text = "2018-1437";
-            this.LblMatriculaBrayan.Click += new System.EventHandler(this.label6_Click);
-            // 
             // FrmIntegrantes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -147,6 +147,7 @@
             this.Controls.Add(this.panel2);
             this.Name = "FrmIntegrantes";
             this.Text = "FrmIntegrantes";
+            this.Load += new System.EventHandler(this.FrmIntegrantes_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);

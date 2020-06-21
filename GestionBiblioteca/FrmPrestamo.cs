@@ -10,25 +10,22 @@ using System.Windows.Forms;
 
 namespace GestionBiblioteca
 {
-    public partial class FrmIntegrantes : Form
+    public partial class FrmPrestamo : Form
     {
-        public FrmIntegrantes()
+        public FrmPrestamo()
         {
             InitializeComponent();
         }
 
-        private void label6_Click(object sender, EventArgs e)
+        private void autorBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
+            
 
         }
 
-        private void LblBrayan_Click(object sender, EventArgs e)
+        private void prestamoBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void FrmIntegrantes_Load(object sender, EventArgs e)
-        {
+            
 
         }
     }
