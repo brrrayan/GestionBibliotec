@@ -46,6 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BibliotecaDataSet.cs">
+      <DependentUpon>BibliotecaDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="BibliotecaDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -62,12 +65,6 @@
     </Compile>
     <Compile Include="FrmBibliografia.Designer.cs">
       <DependentUpon>FrmBibliografia.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmCiencia.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmCiencia.Designer.cs">
-      <DependentUpon>FrmCiencia.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmConsulta.cs">
       <SubType>Form</SubType>
@@ -131,11 +128,35 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAutor.resx">
+      <DependentUpon>FrmAutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBibliografia.resx">
+      <DependentUpon>FrmBibliografia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmConsulta.resx">
       <DependentUpon>FrmConsulta.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmDevolucion.resx">
+      <DependentUpon>FrmDevolucion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditora.resx">
+      <DependentUpon>FrmEditora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEmpleado.resx">
+      <DependentUpon>FrmEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIdioma.resx">
+      <DependentUpon>FrmIdioma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLibro.resx">
+      <DependentUpon>FrmLibro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmPrestamo.resx">
       <DependentUpon>FrmPrestamo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUsuario.resx">
+      <DependentUpon>FrmUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Sistema.resx">
       <DependentUpon>Sistema.cs</DependentUpon>

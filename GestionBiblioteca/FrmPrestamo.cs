@@ -28,5 +28,33 @@ namespace GestionBiblioteca
             
 
         }
+
+        private void prestamoBindingNavigatorSaveItem_Click_1(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.prestamoBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.bibliotecaDataSet);
+
+        }
+
+        private void FrmPrestamo_Load(object sender, EventArgs e)
+        {
+            // TODO: esta línea de código carga datos en la tabla 'bibliotecaDataSet.Prestamo' Puede moverla o quitarla según sea necesario.
+            this.prestamoTableAdapter.Fill(this.bibliotecaDataSet.Prestamo);
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.prestamoBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.bibliotecaDataSet);
+
+        }
+
+        private void fecha_PrestamoDateTimePicker_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

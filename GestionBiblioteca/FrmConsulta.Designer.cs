@@ -30,22 +30,22 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.DgvConsulta = new System.Windows.Forms.DataGridView();
+            this.bibliotecaDataSet = new GestionBiblioteca.BibliotecaDataSet();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.bibliotecaDataSet = new GestionBiblioteca.BibliotecaDataSet();
             this.autorBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.autorTableAdapter = new GestionBiblioteca.BibliotecaDataSetTableAdapters.AutorTableAdapter();
             this.tableAdapterManager = new GestionBiblioteca.BibliotecaDataSetTableAdapters.TableAdapterManager();
-            this.DgvConsulta = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bibliotecaDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.autorBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgvConsulta)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bibliotecaDataSet)).BeginInit();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.autorBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -62,6 +62,53 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(728, 472);
             this.panel1.TabIndex = 0;
+            // 
+            // DgvConsulta
+            // 
+            this.DgvConsulta.AllowUserToAddRows = false;
+            this.DgvConsulta.AllowUserToDeleteRows = false;
+            this.DgvConsulta.AutoGenerateColumns = false;
+            this.DgvConsulta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvConsulta.DataSource = this.bibliotecaDataSet;
+            this.DgvConsulta.Location = new System.Drawing.Point(15, 177);
+            this.DgvConsulta.Name = "DgvConsulta";
+            this.DgvConsulta.ReadOnly = true;
+            this.DgvConsulta.Size = new System.Drawing.Size(691, 282);
+            this.DgvConsulta.TabIndex = 5;
+            // 
+            // bibliotecaDataSet
+            // 
+            this.bibliotecaDataSet.DataSetName = "BibliotecaDataSet";
+            this.bibliotecaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImage = global::GestionBiblioteca.Properties.Resources.Buscar;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Location = new System.Drawing.Point(617, 126);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(61, 45);
+            this.button1.TabIndex = 4;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(237, 137);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(346, 23);
+            this.textBox1.TabIndex = 3;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Bookman Old Style", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(11, 137);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(219, 22);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Criterio de busqueda:";
             // 
             // panel3
             // 
@@ -82,34 +129,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "CONSULTA";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Bookman Old Style", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(11, 137);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(219, 22);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Criterio de busqueda:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(237, 137);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(346, 23);
-            this.textBox1.TabIndex = 3;
-            // 
-            // button1
-            // 
-            this.button1.BackgroundImage = global::GestionBiblioteca.Properties.Resources.Buscar;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(617, 126);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(61, 45);
-            this.button1.TabIndex = 4;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // panel2
             // 
             this.panel2.BackgroundImage = global::GestionBiblioteca.Properties.Resources.ConsultaImg;
@@ -119,11 +138,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(162, 105);
             this.panel2.TabIndex = 0;
-            // 
-            // bibliotecaDataSet
-            // 
-            this.bibliotecaDataSet.DataSetName = "BibliotecaDataSet";
-            this.bibliotecaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // autorBindingSource
             // 
@@ -142,22 +156,11 @@
             this.tableAdapterManager.DevolucionTableAdapter = null;
             this.tableAdapterManager.EditoraTableAdapter = null;
             this.tableAdapterManager.EmpleadoTableAdapter = null;
-            this.tableAdapterManager.EstadoTableAdapter = null;
             this.tableAdapterManager.IdiomaTableAdapter = null;
             this.tableAdapterManager.LibroTableAdapter = null;
             this.tableAdapterManager.PrestamoTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = GestionBiblioteca.BibliotecaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.UsuarioTableAdapter = null;
-            // 
-            // DgvConsulta
-            // 
-            this.DgvConsulta.AutoGenerateColumns = false;
-            this.DgvConsulta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvConsulta.DataSource = this.bibliotecaDataSet;
-            this.DgvConsulta.Location = new System.Drawing.Point(15, 177);
-            this.DgvConsulta.Name = "DgvConsulta";
-            this.DgvConsulta.Size = new System.Drawing.Size(691, 282);
-            this.DgvConsulta.TabIndex = 5;
             // 
             // FrmConsulta
             // 
@@ -170,11 +173,11 @@
             this.Load += new System.EventHandler(this.FrmConsulta_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvConsulta)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bibliotecaDataSet)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bibliotecaDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.autorBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DgvConsulta)).EndInit();
             this.ResumeLayout(false);
 
         }

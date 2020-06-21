@@ -146,7 +146,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "FrmIntegrantes";
-            this.Text = "FrmIntegrantes";
+            this.Text = "Integrantes";
             this.Load += new System.EventHandler(this.FrmIntegrantes_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

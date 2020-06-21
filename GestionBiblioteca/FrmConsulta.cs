@@ -31,5 +31,10 @@ namespace GestionBiblioteca
             this.autorTableAdapter.Fill(this.bibliotecaDataSet.Autor);
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

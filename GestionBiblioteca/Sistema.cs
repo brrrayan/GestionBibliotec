@@ -39,12 +39,14 @@ namespace GestionBiblioteca
 
         private void cienciaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new FrmCiencia().Show();
+          
         }
 
         private void idiomaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new FrmIdioma().Show();
+         
+
         }
 
         private void autoresToolStripMenuItem_Click(object sender, EventArgs e)
